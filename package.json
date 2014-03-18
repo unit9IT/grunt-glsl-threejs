@@ -1,0 +1,42 @@
+{
+  "name": "grunt-glsl-threejs",
+  "description": "A Grunt taks for wrapping GLSL Shader code in Javascript packages, ready to be used in Three.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/unit9IT/grunt-glsl-threejs",
+  "author": {
+    "name": "Daniele Pelagatti",
+    "email": "daniele.pelagatti@unit9.com",
+    "url": "http://www.danielepelagatti.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unit9IT/grunt-glsl-threejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unit9IT/grunt-glsl-threejs/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/unit9IT/grunt-glsl-threejs/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.4"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.4"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
