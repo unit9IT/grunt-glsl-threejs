@@ -132,7 +132,8 @@ module.exports = function(grunt) {
     var isWin, options;
     isWin = /^win/.test(process.platform);
     options = this.options({
-      lineendings: isWin ? "\r\n" : "\n"
+      lineEndings: isWin ? "\r\n" : "\n",
+      jsPackage: "THREE"
     });
     return this.files.forEach(function(f) {
       var additionalUniform, additionalUniforms, ext, fs, fsArr, group, groups, i, ind, js_shader, name, names, outFile, path, shaderName, splt, splt2, src, uniformLib, uniformLibs, uniformName, uniforms, vs, vsArr, _i, _j, _k, _l, _len, _len1, _len2, _len3;
@@ -189,10 +190,10 @@ module.exports = function(grunt) {
         }
         if ((group.vertexShader != null) && (group.fragmentShader != null)) {
           vs = grunt.util.normalizelf(grunt.file.read(group.vertexShader));
-          vsArr = vs.split(options.lineendings);
+          vsArr = vs.split(options.lineEndings);
           stripEmptyLines(vsArr);
           fs = grunt.util.normalizelf(grunt.file.read(group.fragmentShader));
-          fsArr = fs.split(options.lineendings);
+          fsArr = fs.split(options.lineEndings);
           stripEmptyLines(fsArr);
           additionalUniforms = [];
           extractAdditionalUniforms(vsArr, additionalUniforms);
@@ -203,7 +204,7 @@ module.exports = function(grunt) {
           extractUniforms(fsArr, uniforms);
           shaderName = group.vertexShader.split("/");
           shaderName = shaderName[shaderName.length - 1].split(".")[0];
-          js_shader = "THREE." + shaderName + " = {\n";
+          js_shader = options.jsPackage + "." + shaderName + " = {\n";
           js_shader += "\tuniforms: THREE.UniformsUtils.merge([\n";
           for (_k = 0, _len2 = uniformLibs.length; _k < _len2; _k++) {
             uniformLib = uniformLibs[_k];
@@ -221,12 +222,12 @@ module.exports = function(grunt) {
           js_shader += "\t]),\n";
           js_shader += "\tvertexShader: [\n";
           vsArr = vsArr.map(stripTHREE);
-          vs = vsArr.join(options.lineendings);
+          vs = vsArr.join(options.lineEndings);
           js_shader += vs.substr(0, vs.length - 1);
           js_shader += "].join(\"\\n\"),\n";
           js_shader += "\tfragmentShader: [\n";
           fsArr = fsArr.map(stripTHREE);
-          fs = fsArr.join(options.lineendings);
+          fs = fsArr.join(options.lineEndings);
           js_shader += fs.substr(0, fs.length - 1);
           js_shader += "].join(\"\\n\")\n";
           js_shader += "};";

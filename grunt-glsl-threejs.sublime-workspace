@@ -120,11 +120,11 @@
 	},
 	"file_history":
 	[
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/Gruntfile.js",
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/src/glsl_threejs.coffee",
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/glsl_threejs_test.js",
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/package.json",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tasks/glsl_threejs.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/package.json",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/src/glsl_threejs.coffee",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/Gruntfile.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/glsl_threejs_test.js",
 		"/C/Users/dani/Dropbox/sito_3d/src/coffee/App.coffee",
 		"/C/Users/dani/Dropbox/sito_3d/index.html",
 		"/C/Users/dani/Dropbox/sito_3d/js/libs/rasterizeHTML.allinone2.js",
@@ -365,7 +365,7 @@
 	},
 	"output.exec":
 	{
-		"height": 259.0
+		"height": 367.0
 	},
 	"output.find_results":
 	{

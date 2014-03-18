@@ -109,7 +109,8 @@ module.exports = (grunt)->
 		isWin = /^win/.test(process.platform);
 
 		options = @options
-			lineendings : if isWin then "\r\n" else "\n";
+			lineEndings : if isWin then "\r\n" else "\n";
+			jsPackage : "THREE"
 
 
 
@@ -159,11 +160,11 @@ module.exports = (grunt)->
 
 				if group.vertexShader? && group.fragmentShader?
 					vs = grunt.util.normalizelf( grunt.file.read(group.vertexShader) );
-					vsArr = vs.split(options.lineendings);
+					vsArr = vs.split(options.lineEndings);
 					stripEmptyLines(vsArr)
 
 					fs = grunt.util.normalizelf( grunt.file.read(group.fragmentShader) );
-					fsArr = fs.split(options.lineendings);
+					fsArr = fs.split(options.lineEndings);
 					stripEmptyLines(fsArr)
 
 					additionalUniforms = []
@@ -180,7 +181,7 @@ module.exports = (grunt)->
 					shaderName = group.vertexShader.split("/");
 					shaderName = shaderName[shaderName.length-1].split(".")[0];
 
-					js_shader = "THREE."+shaderName+" = {\n";
+					js_shader = options.jsPackage+"."+shaderName+" = {\n";
 					js_shader += "\tuniforms: THREE.UniformsUtils.merge([\n";
 					
 					for uniformLib in uniformLibs
@@ -202,7 +203,7 @@ module.exports = (grunt)->
 
 					vsArr = vsArr.map(stripTHREE)
 
-					vs = vsArr.join(options.lineendings);
+					vs = vsArr.join(options.lineEndings);
 					js_shader += vs.substr(0,vs.length-1);
 
 					js_shader += "].join(\"\\n\"),\n"
@@ -210,7 +211,7 @@ module.exports = (grunt)->
 
 
 					fsArr = fsArr.map(stripTHREE)
-					fs = fsArr.join(options.lineendings);
+					fs = fsArr.join(options.lineEndings);
 
 					js_shader += fs.substr(0,fs.length-1);
 
