@@ -1,0 +1,414 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"focu",
+				"focus_balance"
+			],
+			[
+				"len",
+				"length-1"
+			],
+			[
+				"uniform",
+				"uniformName"
+			],
+			[
+				"unifor",
+				"uniforms"
+			],
+			[
+				"extractUniform",
+				"extractUniformLibs"
+			],
+			[
+				"additio",
+				"additionalUniforms"
+			],
+			[
+				"extra",
+				"extractAdditionalUniforms"
+			],
+			[
+				"vert",
+				"vertexShader"
+			],
+			[
+				"fra",
+				"fragmentShader"
+			],
+			[
+				"for",
+				"forin	Array Comprehension"
+			],
+			[
+				"cam",
+				"camRot"
+			],
+			[
+				"make",
+				"makeRotationFromQuaternion"
+			],
+			[
+				"rot",
+				"rotMat"
+			],
+			[
+				"new",
+				"newPos"
+			],
+			[
+				"pos",
+				"posMat"
+			],
+			[
+				"PO",
+				"position"
+			],
+			[
+				"norma",
+				"normalize"
+			],
+			[
+				"pick",
+				"pickMouseY"
+			],
+			[
+				"update",
+				"updateMatrix"
+			],
+			[
+				"get",
+				"geometry"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/Grunt.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/dani/Dropbox/sito_3d/src/coffee/App.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/index.html",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/rasterizeHTML.allinone2.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/Gruntfile.js",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/PlaneShader.vert",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/PlaneShader.frag",
+		"/C/Users/dani/Dropbox/sito_3d/js/planeshader.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/package.json",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/README.md",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/testing",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/123",
+		"/C/Users/dani/Dropbox/sito_3d/maya/data/scene2.json",
+		"/C/Users/dani/Dropbox/sito_3d/src/jade/index.jade",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tasks/glsl_threejs.js",
+		"/C/Users/dani/Dropbox/sito_3d/node_modules/grunt-glsl/tasks/glsl.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/TestShader.frag",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/TestShader.vert",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/nofs.vert",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/novs.frag",
+		"/C/Users/dani/Dropbox/sito_3d/js/shaders.js",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/materials/ShaderMaterial.js",
+		"/C/Users/dani/Desktop/OLD/disney/trunk/project/develop/coffee/ifl/IFLMaterialManager.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/loaders/TextureLoader.js",
+		"/C/Users/dani/Desktop/OLD/disney/trunk/project/develop/coffee/ifl/IFLModelManager.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/renderers/shaders/UniformsUtils.js",
+		"/C/Users/dani/Dropbox/sito_3d/Gruntfile.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/renderers/shaders/ShaderLib.js",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/renderers/shaders/UniformsLib.js",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/ciao.frag",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/ciao.vert",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/renderers/shaders/ShaderChunk.js",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/threeshader.frag",
+		"/C/Users/dani/Dropbox/sito_3d/js/libs/three.js-master/src/renderers/WebGLRenderer.js",
+		"/C/Users/dani/Dropbox/sito_3d/new.html",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/threeshader.vert",
+		"/C/Users/dani/Desktop/glsl.js",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/novs.vert",
+		"/C/Users/dani/Dropbox/sito_3d/node_modules/grunt-glsl/tasks/glsl.js",
+		"/C/Users/dani/Dropbox/sito_3d/src/glsl/ciao.glsl",
+		"/C/Users/dani/Dropbox/sito_3d/grunt-glsl/tasks/glsl.js",
+		"/C/Users/dani/Desktop/grunt-coffee-percolator-master/package.json",
+		"/C/Users/dani/Desktop/grunt-coffee-percolator-master/tasks/coffee_percolator.coffee",
+		"/C/Users/dani/Desktop/grunt-coffee-percolator-master/Gruntfile.js",
+		"/C/Users/dani/Desktop/nike/website/index.html",
+		"/C/Users/dani/Dropbox/sito_3d/src/compass/main.sass",
+		"/C/Users/dani/Dropbox/sito_3d/css/main.css",
+		"/C/Users/dani/Desktop/nike/desktop/styles/main.sass",
+		"/C/Users/dani/Desktop/rogue AUS/trunk/website/the-detour/sass/views/_AllowWebGlView.scss",
+		"/C/Users/dani/Desktop/rogue AUS/trunk/website/the-detour/sass/assets.scss",
+		"/C/Users/dani/Desktop/rogue AUS/trunk/website/the-detour/Gruntfile.js",
+		"/C/Users/dani/Dropbox/sito_3d/config.rb",
+		"/C/Users/dani/Dropbox/sito_3d/js/main.js",
+		"/C/Users/dani/AppData/Roaming/Sublime Text 3/Packages/User/Grunt.sublime-build",
+		"/C/Users/dani/Dropbox/sito_3d/src/coffee/main.coffee",
+		"/C/Users/dani/Dropbox/sito_3d/src/jade/index.html",
+		"/C/Users/dani/Dropbox/sito_3d/js/planeshader",
+		"/C/Users/dani/Dropbox/sito_3d/data/scene2.json",
+		"/C/Users/dani/Dropbox/sito_3d/sito.sublime-project",
+		"/C/Users/dani/Dropbox/sito_3d/data/scene.fbx",
+		"/C/Users/dani/Desktop/rogue AUS/trunk/website/the-detour/index.html",
+		"/C/Users/dani/Desktop/AUTODESK.MAYA.V2014.SP2.WIN64-ISO/V-Ray_adv_2.40.01_For Maya 2014_x64/ReadME.txt",
+		"/C/Users/dani/Desktop/AUTODESK.MAYA.V2014.SP2.WIN64-ISO/maya2014sp2_x64/Crack/install.txt",
+		"/C/Users/dani/Dropbox/sito_3d/data/split_obj.py",
+		"/D/Users/User/Desktop/three.js-master/utils/converters/fbx/README.md",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/scene.json",
+		"/D/Dropbox (unit9 italy)/sito_3d/index.html",
+		"/D/Users/User/Desktop/Main.as",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/convert_to_threejs.py",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/convert_fbx_three.py",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/scene.dae",
+		"/C/Python27/Lib/site-packages/README.txt",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program Files/Autodesk/FBX/FBX Python SDK/2014.2.1/readme.txt",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/scene.obj",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/direct_export.js",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/split_obj.py",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/plane_000.json",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/plane_024.obj",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/singleobj.obj_000.obj",
+		"/D/Users/User/Desktop/three.js-master/utils/converters/obj/split_obj.py",
+		"/D/Dropbox (unit9 italy)/sito_3d/data/scene.mtl",
+		"/D/Dropbox (unit9 italy)/sito_3d/scenes/scene.obj",
+		"/D/Dropbox (unit9 italy)/sito_3d/scenes/scene.mtl",
+		"/H/Crack/install.txt",
+		"/D/Users/User/Desktop/V-Ray_adv_2.40.01_For Maya 2014_x64/ReadME.txt",
+		"/D/Users/User/Desktop/three.js-master/utils/exporters/maya/scripts/ThreeJsExportScript.mel",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Users/User/Desktop/three.js-master/utils/exporters/maya/plug-ins/threeJsFileTranslator.py",
+		"/D/Users/User/Desktop/three.js-master/utils/editors/sublime.sh",
+		"/D/Users/User/Desktop/three.js-master/utils/editors/sublime.py",
+		"/D/Users/User/Desktop/three.js-master/utils/exporters/maya/README.md",
+		"/D/Users/User/Desktop/three.js-master/utils/editors/sublimetext2/README.md",
+		"/D/Users/User/Downloads/V-Ray_adv_2.40.01_For Maya 2014_x64/ReadME.txt",
+		"/D/Users/User/Desktop/7821v17/7821v1x.txt",
+		"/D/Tombraider/SKIDROW.ini",
+		"/D/Dropbox (unit9 italy)/GameData/TextureReplacer/README.txt",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.986/README.txt",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.145/README.txt",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.026/cloudLayers.cfg",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.171/ReadMe.txt",
+		"/D/Users/User/Desktop/WinRAR 4.00 32Bit And 64Bit Full-Version {blaze69}/ReadMe.txt",
+		"/C/Users/User/AppData/Local/Temp/Rar$DIa0.616/RPL_INSTRUCTIONS_PLEASE_READ.txt",
+		"/D/SteamLibrary/SteamApps/common/Super Meat Boy/buttonmap.cfg",
+		"/D/SteamLibrary/SteamApps/common/Super Meat Boy/steam_appid.txt",
+		"/D/SteamLibrary/SteamApps/common/BioShock Infinite/README_italian.txt",
+		"/D/Users/User/Downloads/Tomb Raider 2013 PC full game + DLC ^^nosTEAM^^/READ ME FIRST !!!.txt",
+		"/D/Users/User/Downloads/Adobe Photoshop Lightroom 5.3 Final (64 bit) [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/D/Users/User/Downloads/Adobe photoshop CS6 13.0 [Extended x86+x64] (2012) PC/ReadMe.txt",
+		"/D/Users/User/Desktop/Instructions.txt"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ALPHATEST",
+			"map_",
+			"defines",
+			"shader",
+			"shadowMatrix",
+			"m4v",
+			"uniform",
+			"mat",
+			"m4v",
+			"matrix",
+			"shadowMap ",
+			"shadowMap",
+			"shadowMapSize",
+			"shadowDarkness",
+			"m4v",
+			"matr",
+			"opacity",
+			"THREE.ShaderChunk",
+			"//THREE",
+			"var",
+			"//",
+			"=",
+			"@",
+			"mesh",
+			"render_gl",
+			"render_canvas",
+			"//",
+			"C:/Users/dani/Dropbox/sito_3d",
+			"lookAt",
+			"10",
+			"rotation",
+			"C:\\Users\\dani\\Dropbox\\sito_3d\\",
+			"Vector3String",
+			"rota",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"D:/Dropbox (unit9 italy)/sito_3d/images",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"180",
+			"getRadians",
+			"rota",
+			"order",
+			"\\images\\",
+			"file://D:/Dropbox (unit9 italy)/sito_3d",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"emissive",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"\"ambient\"  : 0",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"camera",
+			"D:/Dropbox (unit9 italy)/sito_3d",
+			"D:/Dropbox (unit9 italy)/sito_3d/",
+			"materia",
+			"callbackMale",
+			"consol"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"//#THREE.ShaderChunk",
+			"//#THREE",
+			"#"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 327.0
+	},
+	"output.exec":
+	{
+		"height": 259.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "grunt-glsl-threejs.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 393.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
