@@ -17,7 +17,10 @@ module.exports = function(grunt) {
       compile : {
         files : {
           'tasks/glsl_threejs.js' : 'src/glsl_threejs.coffee'
-        }
+        },
+        options: {
+          bare: true
+        }        
       }
     },
 

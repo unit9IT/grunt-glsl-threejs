@@ -1,7 +1,7 @@
 {
   "name": "grunt-glsl-threejs",
   "description": "A Grunt taks for wrapping GLSL Shader code in Javascript packages, ready to be used in Three.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/unit9IT/grunt-glsl-threejs",
   "author": {
     "name": "Daniele Pelagatti",

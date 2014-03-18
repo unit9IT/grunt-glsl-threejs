@@ -103,7 +103,7 @@ parseUniform = (name,type)->
 	null;
 
 module.exports = (grunt)->
-	grunt.registerMultiTask 'glsl', 'A Compiler for GLSL Shaders', ()->
+	grunt.registerMultiTask 'glsl_threejs', 'A Compiler for GLSL Shaders', ()->
 		
 
 		isWin = /^win/.test(process.platform);
