@@ -17,6 +17,11 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-glsl-threejs');
 ```
 
+## Automatic Uniforms Generator
+This Grunt script tries to generate automatic Three.js wrapper code for all the uniforms used in yourt Fragment and Vertex Shaders, please note this part of the script is the most experimental one and there are many areas where it falls short in regard to this.
+
+In case you find the automatically generated uniforms are incorrect, you can always specify the right ones in your JS code just before passing the Shader code in your ShaderMaterial.
+
 ## GLSL Special Syntax
 A special syntax has been introduced in GLSL Comments in order to include Raw Javascript code in case you need it
 
@@ -161,7 +166,7 @@ MYPACKAGE.MyShader2 = {
 
 
 #### Example GLSL Files
-MyShader 
+MyShader is an example simple shader with no light support. Based on the default Three.js Lambert Shader.
 
 
 MyShader.vert
@@ -207,6 +212,12 @@ void main() {
 }
 
 ```
+
+
+## Known Issues
+
+ * The Automatic Uniforms Generator cannot understand the difference between a Color vec3/vec4 and a normal one. Generated uniforms will always be mapped to THREE.Vector3 objects.
+ * The Automatic Uniforms Generator has not been tested with all possible uniform types (especially Vectors of Matrices and similar), if you find a bug please let me know using the bug tracker.
 
 
 ## Contributing
