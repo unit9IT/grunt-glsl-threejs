@@ -7,7 +7,11 @@
  * Licensed under the MIT license.
  */
 'use strict';
-var extractAdditionalUniforms, extractUniformLibs, extractUniforms, parseUniform, stripEmptyLines, stripTHREE;
+var extractAdditionalUniforms, extractUniformLibs, extractUniforms, onData, parseUniform, stripEmptyLines, stripTHREE;
+
+onData = function(x) {
+  return console.log('ast of', x.type);
+};
 
 extractAdditionalUniforms = function(shaderArray, destination) {
   var i, ind, line, _i, _ref;
@@ -66,7 +70,7 @@ stripTHREE = function(line) {
   var ind;
   ind = line.split("//#THREE");
   if (ind.length === 1) {
-    return '\t\t\'' + line + '\',';
+    return '\t\t\'' + line.split("'").join("\\'") + '\',';
   } else {
     return '\t\t' + ind.join("THREE") + ",";
   }
@@ -90,6 +94,8 @@ parseUniform = function(name, type) {
         return '"' + name + '" : { type: "f", value: -1 }';
       case "int":
         return '"' + name + '" : { type: "i", value: 0 }';
+      case "bool":
+        return '"' + name + '" : { type: "i", value: 0 }';
       case "sampler2D":
         return '"' + name + '" : { type: "t", value: null }';
       case "vec4":
@@ -109,6 +115,8 @@ parseUniform = function(name, type) {
       case "float":
         return '"' + name + '" : { type: "fv", value: [] }';
       case "int":
+        return '"' + name + '" : { type: "iv", value: [] }';
+      case "bool":
         return '"' + name + '" : { type: "iv", value: [] }';
       case "sampler2D":
         return '"' + name + '" : { type: "tv", value: [] }';
@@ -234,8 +242,12 @@ module.exports = function(grunt) {
           outFile += js_shader + "\n";
         }
       }
-      grunt.file.write(f.dest, outFile);
-      return grunt.log.writeln('File "' + f.dest + '" created.');
+      if (outFile.length > 0) {
+        grunt.file.write(f.dest, outFile);
+        return grunt.log.writeln('File "' + f.dest + '" created.');
+      } else {
+        return grunt.log.writeln('No File was created');
+      }
     });
   });
 };

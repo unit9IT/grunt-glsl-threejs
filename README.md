@@ -224,4 +224,6 @@ void main() {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+ * 2014-04-08   v0.1.3   Now escaping quotes from glsl, comments with quotes will not break the js. Added jsunit test cases.
+ * 2014-03-18   v0.1.2   Fixed task name
  * 2014-03-18   v0.1.1   First stable Version

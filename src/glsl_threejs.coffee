@@ -8,6 +8,9 @@
 
 'use strict';
 
+onData = (x)->
+	console.log('ast of', x.type)
+
 extractAdditionalUniforms = (shaderArray,destination = [])->
 	for i in [shaderArray.length-1..0] by -1
 		line = shaderArray[i];
@@ -46,7 +49,7 @@ extractUniforms = (shaderArray,destination = {})->
 stripTHREE = (line)->
 	ind = line.split("//#THREE")
 	if ind.length == 1
-		return '\t\t\''+line+'\','
+		return '\t\t\''+line.split("'").join("\\'")+'\','
 	else
 		return '\t\t'+ind.join("THREE")+","
 
@@ -66,6 +69,8 @@ parseUniform = (name,type)->
 				return '"'+name+'" : { type: "f", value: -1 }'
 			when "int"
 				return '"'+name+'" : { type: "i", value: 0 }'
+			when "bool"
+				return '"'+name+'" : { type: "i", value: 0 }'				
 			when "sampler2D"
 				return '"'+name+'" : { type: "t", value: null }'
 			when "vec4"
@@ -85,6 +90,8 @@ parseUniform = (name,type)->
 			when "float"
 				return '"'+name+'" : { type: "fv", value: [] }'
 			when "int"
+				return '"'+name+'" : { type: "iv", value: [] }'
+			when "bool"
 				return '"'+name+'" : { type: "iv", value: [] }'
 			when "sampler2D"
 				return '"'+name+'" : { type: "tv", value: [] }'
@@ -181,6 +188,10 @@ module.exports = (grunt)->
 					shaderName = group.vertexShader.split("/");
 					shaderName = shaderName[shaderName.length-1].split(".")[0];
 
+					# js_shader = "if ("+options.jsPackage+" == null) {\n"
+					# js_shader += "var "+options.jsPackage+" = {};\n"
+					# js_shader += "}\n"
+
 					js_shader = options.jsPackage+"."+shaderName+" = {\n";
 					js_shader += "\tuniforms: THREE.UniformsUtils.merge([\n";
 					
@@ -222,9 +233,12 @@ module.exports = (grunt)->
 
 
 
-			
-			grunt.file.write(f.dest, outFile);
+			if outFile.length > 0 
+				grunt.file.write(f.dest, outFile);
 
-			#Print a success message.
-			grunt.log.writeln('File "' + f.dest + '" created.');
+				#Print a success message.
+				grunt.log.writeln('File "' + f.dest + '" created.');
+			else
+				grunt.log.writeln('No File was created');
+
 				
