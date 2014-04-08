@@ -23,26 +23,66 @@ var grunt = require('grunt');
 */
 
 exports.glsl_threejs = {
+  
   setUp: function(done) {
     // setup here if necessary
     done();
   },
   default_options: function(test) {
-    // test.expect(1);
+    test.expect(1);
+    var actual = grunt.file.read('tmp/default_options.js');
+    var expected = grunt.file.read('test/expected/default_options.js');
+    test.equal(actual, expected, 'output file doesn\'t match expected result');
 
-    // var actual = grunt.file.read('tmp/default_options');
-    // var expected = grunt.file.read('test/expected/default_options');
-    // test.equal(actual, expected, 'should describe what the default behavior is.');
+    //test.doesNotThrow(
+    //  function() {
+    //    /*jshint evil:true */
+    //    eval(actual);
+    //  }
+    //);
 
-    // test.done();
+    test.done();
   },
+
+
   custom_options: function(test) {
-    // test.expect(1);
+    test.expect(1);
+    var actual = grunt.file.read('tmp/custom_options.js');
+    var expected = grunt.file.read('test/expected/custom_options.js');
+    test.equal(actual, expected, 'output file doesn\'t match expected result');
 
-    // var actual = grunt.file.read('tmp/custom_options');
-    // var expected = grunt.file.read('test/expected/custom_options');
-    // test.equal(actual, expected, 'should describe what the custom option(s) behavior is.');
 
-    // test.done();
+    //test.doesNotThrow(
+    //  function() {
+    //    /*jshint evil:true */
+    //    eval(actual);
+    //  }
+    //);
+
+    test.done();
   },
+
+
+  no_vert: function(test) {
+    test.expect(1);
+    test.throws(
+      function() {
+        // no file has to be created
+        grunt.file.read('tmp/no_vert.js');
+      } );
+    test.done();
+  },
+
+
+  no_frag: function(test) {
+    test.expect(1);
+    test.throws(
+      function() {
+        // no file has to be created
+        grunt.file.read('tmp/no_frag.js');
+      } );
+    test.done();
+  },
+
+
 };

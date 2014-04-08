@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"le",
+				"length"
+			],
+			[
 				"focu",
 				"focus_balance"
 			],
@@ -91,21 +95,39 @@
 	"build_system": "Packages/User/Grunt.sublime-build",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 219.0,
 		"selected_items":
 		[
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
+			],
+			[
+				"markdo",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"mark",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"markdow",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"git",
+				"GitHub Flavored Markdown: Preview"
 			]
 		],
-		"width": 400.0
+		"width": 576.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
+			"view.run_command(\"glsl_lint\")",
+			"glsl_lint",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -120,18 +142,32 @@
 	},
 	"file_history":
 	[
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tasks/glsl_threejs.js",
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/package.json",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/Simple1.vert",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/Simple1.frag",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/Simple1.vp",
+		"/C/Users/dani/AppData/Roaming/Sublime Text 3/Packages/glsl-lint-master/glsl_lint.py",
+		"/C/Users/dani/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/src/glsl_threejs.coffee",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/Gruntfile.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tmp/default_options",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/glsl_threejs_test.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tasks/glsl_threejs.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/package.json",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/node_modules/glsl-parser/index.js",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/WinLineEndings.vert",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/tmp/custom_options",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/README.md",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/NixLineEndings.frag",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/NixLineEndings.vert",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/NoVert.frag",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/NoFrag.vert",
+		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/expected/default_options",
 		"/C/Users/dani/Dropbox/sito_3d/src/coffee/App.coffee",
 		"/C/Users/dani/Dropbox/sito_3d/index.html",
 		"/C/Users/dani/Dropbox/sito_3d/js/libs/rasterizeHTML.allinone2.js",
 		"/C/Users/dani/Dropbox/sito_3d/src/glsl/PlaneShader.vert",
 		"/C/Users/dani/Dropbox/sito_3d/src/glsl/PlaneShader.frag",
 		"/C/Users/dani/Dropbox/sito_3d/js/planeshader.js",
-		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/README.md",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/testing",
 		"/C/Users/dani/Documents/GitHub/grunt-glsl-threejs/test/fixtures/123",
 		"/C/Users/dani/Dropbox/sito_3d/maya/data/scene2.json",
@@ -235,7 +271,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -249,6 +285,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"THREE",
+			"lineEndings",
+			"lineendings",
+			"lineen",
+			"lineendings",
 			"ALPHATEST",
 			"map_",
 			"defines",
