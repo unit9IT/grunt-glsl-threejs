@@ -1,4 +1,9 @@
-# grunt-glsl-threejs
+# grunt-glsl-threejs [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![NPM version](https://badge.fury.io/js/grunt-glsl-threejs.png)](http://badge.fury.io/js/grunt-glsl-threejs)
+[![Build Status](https://travis-ci.org/unit9IT/grunt-glsl-threejs.png?branch=master)](https://travis-ci.org/unit9IT/grunt-glsl-threejs)
+[![Dependency Status](https://david-dm.org/unit9IT/grunt-glsl-threejs.png?theme=shields.io)](https://david-dm.org/unit9IT/grunt-glsl-threejs)
+[![devDependency Status](https://david-dm.org/unit9IT/grunt-glsl-threejs/dev-status.png?theme=shields.io)](https://david-dm.org/unit9IT/grunt-glsl-threejs#info=devDependencies)
 
 > A Grunt taks for wrapping GLSL Shader code in Javascript packages, ready to be used in Three.js
 
