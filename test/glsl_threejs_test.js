@@ -30,8 +30,8 @@ exports.glsl_threejs = {
   },
   default_options: function(test) {
     test.expect(1);
-    var actual = grunt.file.read('tmp/default_options.js');
-    var expected = grunt.file.read('test/expected/default_options.js');
+    var actual = grunt.util.normalizelf( grunt.file.read('tmp/default_options.js') );
+    var expected = grunt.util.normalizelf( grunt.file.read('test/expected/default_options.js') );
     test.equal(actual, expected, 'output file doesn\'t match expected result');
 
     //test.doesNotThrow(
@@ -47,8 +47,8 @@ exports.glsl_threejs = {
 
   custom_options: function(test) {
     test.expect(1);
-    var actual = grunt.file.read('tmp/custom_options.js');
-    var expected = grunt.file.read('test/expected/custom_options.js');
+    var actual = grunt.util.normalizelf( grunt.file.read('tmp/custom_options.js') );
+    var expected = grunt.util.normalizelf( grunt.file.read('test/expected/custom_options.js') );
     test.equal(actual, expected, 'output file doesn\'t match expected result');
 
 
